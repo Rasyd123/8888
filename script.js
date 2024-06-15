@@ -1,4 +1,4 @@
-document.getElementById('toggle-audio').addEventListener('click', function() {
+document.getElementById('play-audio').addEventListener('click', function() {
     var audio = document.getElementById('audio');
     if (audio.paused) {
         audio.play();
@@ -7,11 +7,4 @@ document.getElementById('toggle-audio').addEventListener('click', function() {
         audio.pause();
         this.textContent = 'Putar Audio';
     }
-});
-
-// Autoplay audio on page load
-window.addEventListener('load', function() {
-    var audio = document.getElementById('audio');
-    audio.play().catch(function(error)
-    });
 });
